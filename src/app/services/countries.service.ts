@@ -15,6 +15,27 @@ export class CountriesService {
 
   getPaises() {
 
+    // ejemplo de promesa
+
+    console.log("inicio promesa");
+
+    const promesa = new Promise((resolve, reject) =>{
+
+      setTimeout(() =>{
+
+          resolve("se termino la promesa");
+
+      }, 5000);
+
+
+    });
+
+    promesa.then(mensaje => console.log(mensaje));
+
+    console.log("fin promesa");
+
+    //  http request
+
     return this.http.
       get('https://restcountries.eu/rest/v2/lang/es')
       .pipe(
