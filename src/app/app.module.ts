@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { FormComponent } from './components/form/form.component';
 import { CountriesService } from './services/countries.service';
+import { IfsComponent } from './components/ifs/ifs.component';
+import { CountryDetailComponent } from './components/country-detail/country-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CountriesService } from './services/countries.service';
     FooterComponent,
     MenuComponent,
     PipesComponent,
-    FormComponent
+    FormComponent,
+    IfsComponent,
+    CountryDetailComponent
   ],
   imports: [
     BrowserModule,
