@@ -19,11 +19,11 @@ export class CountriesService {
 
     console.log("inicio promesa");
 
-    const promesa = new Promise((resolve, reject) =>{
+    const promesa = new Promise((resolve, reject) => {
 
-      setTimeout(() =>{
+      setTimeout(() => {
 
-          resolve("se termino la promesa");
+        resolve("se termino la promesa");
 
       }, 5000);
 
