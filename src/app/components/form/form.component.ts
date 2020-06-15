@@ -40,8 +40,6 @@ export class FormComponent implements OnInit {
 
     console.log(forma.value);
 
-
-
     this.usuario.nombre = forma.value.nombre;
 
     console.log("modelo");
