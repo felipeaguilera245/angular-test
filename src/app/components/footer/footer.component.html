@@ -1,5 +1,17 @@
 <div class="container m-t-5">
 
+
+  <div [ngStyle]="{'color':'red'}">
+  style
+  </div>
+
+  <div [ngClass]="tipo_clase">
+  class
+
+  <button type="button" (click)="changeButton()" name="button">cambiar</button>
+
+  </div>
+
   <div *ngFor="let pais of paises">
 
     {{pais.name}}
@@ -7,5 +19,7 @@
     <a [routerLink]="['/country-detail', pais.name]">detalle</a>
 
   </div>
+
+
 
 </div>
